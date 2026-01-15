@@ -1,0 +1,19 @@
+! Title: My Custom AdGuard Blocklist
+! Description: Examples of blocking social media and ad domains.
+! Last Updated: 2025-05-20
+
+! Block Instagram completely
+||instagram.com^
+
+! Block Facebook and all subdomains
+||facebook.com^
+||fbcdn.net^
+
+! Block a specific ad-serving domain
+||doubleclick.net^
+
+! Block a domain but only for a specific client IP (Advanced)
+||tiktok.com^$client=192.168.1.50
+
+! Exception: Unblock a specific sub-domain even if the main domain is blocked
+@@||help.instagram.com^
